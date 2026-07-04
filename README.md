@@ -4,12 +4,12 @@ Discovers and evaluates process models from a combined event log (XES), split by
 
 <h2>Repository Structure</h2>
 <ul>
-  <li>Data/                          # Input event log(s), e.g. all_waves_merged.xes</li>
-  <li>Results/                       # Generated outputs (Petri nets, matrices, plots)</li>
-  <li>main_alpha.py                  # Discovery via Alpha Miner</li>
-  <li>main_heuristic.py              # Discovery via Heuristics Miner</li>
-  <li>main_ilp.py                    # Discovery via ILP Miner</li>
-  <li>main_inductive.py              # Discovery via Inductive Miner</li>
+  <li>Data/: Input event log(s), e.g. all_waves_merged.xes</li>
+  <li>Results/: Generated outputs (Petri nets, matrices, plots)</li>
+  <li>main_alpha.py: Discovery via Alpha Miner</li>
+  <li>main_heuristic.py: Discovery via Heuristics Miner</li>
+  <li>main_ilp.py: Discovery via ILP Miner</li>
+  <li>main_inductive.py: Discovery via Inductive Miner</li>
 </ul>
 
 
