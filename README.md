@@ -39,8 +39,11 @@ pm4py, pandas, numpy, matplotlib, seaborn
 
 <h2>Usage</h2>
 Place event log in Data/all_waves_merged.xes or change the XES_FILE path in the code, then run the corresponding code:
-<code>python main_alpha.py</code>
-<code>python main_heuristic.py</code>
-<code>python main_ilp.py</code>
-<code>python main_inductive.py</code>
+<ul>
+  <li><code>python main_alpha.py</code></li>
+  <li><code>python main_heuristic.py</code></li>
+  <li><code>python main_ilp.py</code></li>
+  <li><code>python main_inductive.py</code></li>
+</ul>
+
 Results are written in Results/
