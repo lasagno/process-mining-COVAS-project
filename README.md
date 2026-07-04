@@ -17,7 +17,7 @@ Discovers and evaluates process models from a combined event log (XES), split by
 <ol>
   <li>Load & prepare data: reads the .xes event log, detects an age attribute column and buckets cases into 10-year age groups.</li>
   <li>Add an "Overall" group: pools all cases together so each age group's model can be compared against an all-ages model</li>
-  <li>Discover process modelsL runs the corresponding miner (Alpha / Heuristics / ILP / Inductive) on each age group's sublog to produce a Petri net per group</li>
+  <li>Discover process models: runs the corresponding miner (Alpha / Heuristics / ILP / Inductive) on each age group's sublog to produce a Petri net per group</li>
   <li>Simplicity evaluation: compute the arc-degree simplicity for each discovered model into a bar chart</li>
   <li>Cross-evaluation: replay every age group's log against every discovered model, producing fitness and precision matrices with heatmaps</li>
 </ol>
@@ -35,12 +35,12 @@ Python 3.x
 pm4py, pandas, numpy, matplotlib, seaborn
 
 <h3>Install with:</h3>
-``pip install pm4py pandas numpy matplotlib seaborn``
+<code>pip install pm4py pandas numpy matplotlib seaborn</code>
 
 <h2>Usage</h2>
 Place event log in Data/all_waves_merged.xes or change the XES_FILE path in the code, then run the corresponding code:
-``python main_alpha.py``
-``python main_heuristic.py``
-``python main_ilp.py``
-``python main_inductive.py``
+<code>python main_alpha.py</code>
+<code>python main_heuristic.py</code>
+<code>python main_ilp.py</code>
+<code>python main_inductive.py</code>
 Results are written in Results/
